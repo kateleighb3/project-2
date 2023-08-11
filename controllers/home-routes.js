@@ -19,9 +19,9 @@ router.get('/', async (req, res) => {
       gallery.get({ plain: true })
     );
 
-    res.render('homepage', {
-      galleries,
-      loggedIn: req.session.loggedIn,
+    res.render('homepage', { layout: 'main'
+      // galleries,
+      // loggedIn: req.session.loggedIn,
     });
   } catch (err) {
     console.log(err);
@@ -78,7 +78,7 @@ router.get('/login', (req, res) => {
     return;
   }
 
-  res.render('login');
+  res.render('login', {layout: 'mainb'});
 });
 
 module.exports = router;
