@@ -20,8 +20,8 @@ router.get('/', async (req, res) => {
     );
 
     res.render('homepage', { layout: 'main'
-      // galleries,
-      // loggedIn: req.session.loggedIn,
+      //galleries,
+      //loggedIn: req.session.loggedIn,
     });
   } catch (err) {
     console.log(err);

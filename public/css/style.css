@@ -25,6 +25,14 @@ main{
   flex-grow: 1;
 }
 
+.mainb{
+  background-image: url("../images/retro-outdoor-image-2.jpg");
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+
 a {
   color: var(--brown);
   text-decoration: none;
@@ -59,15 +67,23 @@ header {
   font-size: 40px;
 }
 
-.login-box{
-  display: flex;
+.b{
+  padding: 10px;
+  text-align: center;
+  background: var(--dark-green);
+  color: var(--tan);
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.title-box-b{
   background-color: var(--tan);
   height: 60px;
-  float: left;
-  box-shadow: 5px 5px;
+  float: right;
+  box-shadow: 5px 5px black;
   border: 3px solid black
 }
-.login-title{
+.main-title-b{
   font-family: 'Bungee Shade', cursive;
   color: var(--dark-green);
   /* float:left; */
@@ -76,8 +92,11 @@ header {
 }
 
 nav {
-  display: flex;
+  display: inline-block;
+  float: left;
+  /* display: flex; */
   background-color: var(--secondary);
+  padding: 20px;
 }
 
 nav a {
@@ -136,9 +155,9 @@ img {
 .card {
   margin: 20px;
   flex: 0 1 300px;
-  border: 7px double var(--dark);
+  border: 7px double var(--tan);
   border-radius: 10px;
-  background-color: var(--light);
+  background-color: var(--darker-tan);
   color: var(--dark);
 }
 
@@ -147,28 +166,28 @@ img {
   flex: 0 0 50%;
   max-width: 50%;
   padding: 5px;
-  border: 3px solid var(--dark);
+  border: 3px solid var(--darker-tan);
   border-radius: var(--border-radius);
   border-style: double;
   border-width: thick;
-  background-color: #577a7c;
-  color: var(--light);
+  background-color: var(--dark-green);
+  color: var(--tan);
 }
 
 .card header {
-  color: var(--light);
+  color: var(--tan);
   font-weight: bold;
   text-transform: uppercase;
   margin: 0;
-  background-color: var(--tertiary);
+  background-color: var(--brown);
   padding: 0.625rem;
   border-radius: calc(0.18rem - 1px) calc(0.18rem - 1px) 0 0;
 }
 
 .card-body {
-  font-size: 1.4rem;
+  font-size: 12px;
   text-align: center;
-  font-weight: bold;
+  font-weight: 900;
 }
 
 .gallery-name {
@@ -188,4 +207,11 @@ img {
   flex-flow: column wrap;
   align-content: flex-start;
   align-items: center;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  height: 300px;
+  width: 50%;
 }
